@@ -361,10 +361,10 @@ var timelines = function() {
 							hover(d, index, datum, i);
 						})
 						.on("mouseover", function (d, i) {
-							mouseover(d, i, datum, i);
+							mouseover(d, index, datum, i);
 						})
 						.on("mouseout", function (d, i) {
-							mouseout(d, i, datum, i);
+							mouseout(d, index, datum, i);
 						})
 						.on("click", function (d, i) {
 							var point = mouse(this);
