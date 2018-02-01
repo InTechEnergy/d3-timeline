@@ -15,12 +15,7 @@
 		"type": "git",
 		"url": "https://github.com/denisemauldin/d3-timeline.git"
 	},
-	"scripts_skip": {
-		"pretest": "rm -rf build && mkdir build && rollup -c -f umd -n d3 -o build/d3-timelines.js -- index.js",
-		"test": "tape 'test/**/*-test.js'",
-		"prepare": "npm run test && uglifyjs build/d3-timelines.js -c -m -o build/d3-timelines.min.js",
-		"postpublish": "zip -j build/d3-timelines.zip -- LICENSE README.md build/d3-timelines.js build/d3-timelines.min.js"
-	},
+	"scripts_skip": {},
 	"peerDependencies": {
 		"d3-array": "^1.2.0",
 		"d3-axis": "^1.0.7",
